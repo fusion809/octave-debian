@@ -50,7 +50,7 @@ clean:
 
 override_dh_auto_configure:
 	# override normal dh_auto_configure call to pass OpenMP flag to it (#631831)
-	dh_auto_configure -- --enable-openmp $(WITH_JAVA_FLAGS) $(JIT_FLAG) $(HDF5_FLAGS)
+	dh_auto_configure -- --enable-openmp --without-OSMesa $(WITH_JAVA_FLAGS) $(JIT_FLAG) $(HDF5_FLAGS)
 	# Avoid triggering the build of oct-gperf.h
 	touch libinterp/parse-tree/oct-gperf.h
 
@@ -82,9 +82,9 @@ override_dh_installinfo-indep:
 		sed -i "s/src=\"$$f\"/src=\"octave-$$f\"/g" debian/octave-info/usr/share/info/octave.info*; \
 	done
 
-# Handle migration to automatic debug packages
+# save debug information into the debug package
 override_dh_strip:
-	dh_strip -a --dbgsym-migration='octave-dbg (<< 4.0.1~rc2-1~)'
+	dh_strip -a --dbg-package=octave-dbg
 
 # Strip the executable bit from the .oct files
 # Cannot be done in dh_fixperms, as then dh_strip and dh_shlibdeps don't take the
