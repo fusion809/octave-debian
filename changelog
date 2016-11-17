@@ -1,8 +1,8 @@
-octave (4.2.0-1ubuntu0~xenial6) xenial; urgency=medium
+octave (4.2.0-1ubuntu0~xenial7) xenial; urgency=medium
 
-  * Rm conflicting files from octave
+  * Hopefully fixing missing octave/octave-cli binary from octave package
 
- -- Brenton Horne <brentonhorne77@gmail.com>  Thu, 17 Nov 2016 20:29:14 +1000
+ -- Brenton Horne <brentonhorne77@gmail.com>  Thu, 17 Nov 2016 22:11:52 +1000
 
 octave (4.2.0-1ubuntu0~xenial5) xenial; urgency=medium
 
