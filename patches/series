@@ -1,0 +1,10 @@
+octave-pkgbuilddir.patch
+#drop_versioned_binaries.diff
+#install_libraries_publically
+#no_pdf_in_print.diff
+add_info_dir_categories
+mkoctfile-mpi.diff
+#always-build-octave-jar.patch
+#hdf5-flags.patch
+hdf5-mkoctfile.patch
+#disable-gui-qt-gles

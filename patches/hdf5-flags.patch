@@ -1,0 +1,29 @@
+Description: Propagate HDF5 flags to various places
+Author: Gilles Filippini <pini@debian.org>
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=756689
+Forwarded: no
+Reviewed-by: Sébastien Villemot <sebastien@debian.org>
+Reviewed-by: Rafael Laboissiere <rafael@laboissiere.net>
+Last-Update: 2015-04-18
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/libgui/src/module.mk
++++ b/libgui/src/module.mk
+@@ -176,6 +176,7 @@ src_libgui_src_la_CPPFLAGS = \
+   $(FONTCONFIG_CPPFLAGS) \
+   @OCTGUI_DLL_DEFS@ \
+   @QT_CPPFLAGS@ \
++  @HDF5_CPPFLAGS@ \
+   -I$(srcdir)/qterminal/libqterminal \
+   -Isrc -I$(srcdir)/src \
+   -I$(srcdir)/src/m-editor \
+--- a/libinterp/Makefile.am
++++ b/libinterp/Makefile.am
+@@ -22,6 +22,7 @@ include $(top_srcdir)/build-aux/common.m
+ 
+ ## Search local directories before those specified by the user.
+ AM_CPPFLAGS = \
++  @HDF5_CPPFLAGS@ \
+   -I$(top_srcdir)/liboctave/cruft/misc \
+   -I$(top_srcdir)/liboctave/array \
+   -I$(top_builddir)/liboctave/numeric -I$(top_srcdir)/liboctave/numeric \

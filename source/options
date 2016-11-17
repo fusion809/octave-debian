@@ -1,0 +1,1 @@
+extend-diff-ignore=.*\.pdf|.*\.dvi|.*\.png|.*\.eps|.*\.ps|.*\.texi|.*\.info.*|stamp-vti|libinterp/parse-tree/oct-gperf\.h|AUTHORS|doc/interpreter/doc-cache

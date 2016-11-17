@@ -1,0 +1,33 @@
+Description: Install the Octave libraries publically in /usr/lib/
+ Thanks to John Eaton for helping with this.
+ .
+ The patch is currently not needed upstream, but forwarding it might make sense
+ in the future.
+Forwarded: not-needed
+Author: Thomas Weber <tweber@debian.org>
+Reviewed-by: Rafael Laboissiere <rafael@laboissiere.net>
+Last-Update: 2015-04-18
+--- a/liboctave/Makefile.am
++++ b/liboctave/Makefile.am
+@@ -34,7 +34,8 @@
+ 
+ AM_CXXFLAGS += $(WARN_CXXFLAGS)
+ 
+-octlib_LTLIBRARIES = liboctave.la
++lib_LTLIBRARIES = liboctave.la
++octlib_LTLIBRARIES =
+ 
+ EXTRA_DIST =
+ 
+--- a/libinterp/Makefile.am
++++ b/libinterp/Makefile.am
+@@ -39,7 +39,8 @@
+ 
+ AM_CXXFLAGS += $(WARN_CXXFLAGS)
+ 
+-octlib_LTLIBRARIES = liboctinterp.la
++lib_LTLIBRARIES = liboctinterp.la
++octlib_LTLIBRARIES =
+ 
+ ## This is the subset of $(BUILT_SOURCES) that may be included by source
+ ## files that are preprocessed to make $(DEF_FILES).  This ensures that

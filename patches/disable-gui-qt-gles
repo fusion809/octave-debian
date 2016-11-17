@@ -1,0 +1,84 @@
+
+# HG changeset patch
+# User Mike Miller <mtmiller@octave.org>
+# Date 1438468945 14400
+# Node ID 6cfbf412a2c3d919d50357d96d24eac7b25d5645
+# Parent  ea85f96dd0aeee477072df57fd64256131a3a0ff
+configure.ac: Test that Qt and OpenGL can be used together (bug #45672)
+
+* m4/acinclude.m4 (OCTAVE_CHECK_QT_OPENGL_OK): New macro.
+* configure.ac: Use it, disable building GUI on failure.
+
+diff --git a/configure.ac b/configure.ac
+--- a/configure.ac
++++ b/configure.ac
+@@ -2888,6 +2888,12 @@
+   fi
+ 
+   if test $build_gui = yes; then
++    OCTAVE_CHECK_QT_OPENGL_OK([],
++      [warn_gui="Qt does not work with the OpenGL libs (GL and GLU) -- disabling GUI"
++       build_gui=no])
++  fi
++
++  if test $build_gui = yes; then
+     OCTAVE_CHECK_FUNC_QABSTRACTITEMMODEL_BEGINRESETMODEL
+     if test $octave_cv_func_qabstractitemmodel_beginresetmodel = no; then
+       warn_gui="QAbstractItemModel::beginResetModel() not found -- disabling GUI"
+diff --git a/m4/acinclude.m4 b/m4/acinclude.m4
+--- a/m4/acinclude.m4
++++ b/m4/acinclude.m4
+@@ -1158,6 +1158,52 @@
+   fi
+ ])
+ dnl
++dnl Check whether Qt works with full OpenGL support
++dnl
++AC_DEFUN([OCTAVE_CHECK_QT_OPENGL_OK], [
++  AC_CACHE_CHECK([whether Qt works with OpenGL and GLU],
++    [octave_cv_qt_opengl_ok],
++    [AC_LANG_PUSH(C++)
++     ac_octave_save_CPPFLAGS="$CPPFLAGS"
++     CPPFLAGS="$QT_CPPFLAGS $CPPFLAGS"
++     AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
++         #if HAVE_WINDOWS_H
++         # include <windows.h>
++         #endif
++         #if defined (HAVE_GL_GL_H)
++         # include <GL/gl.h>
++         #elif defined (HAVE_OPENGL_GL_H)
++         # include <OpenGL/gl.h>
++         #endif
++         #ifdef HAVE_GL_GLU_H
++         # include <GL/glu.h>
++         #elif defined HAVE_OPENGL_GLU_H || defined HAVE_FRAMEWORK_OPENGL
++         # include <OpenGL/glu.h>
++         #endif
++         #include <QGLWidget>
++         class gl_widget : public QGLWidget
++         {
++         public:
++           gl_widget (QWidget *parent = 0) : QGLWidget (parent) {}
++           ~gl_widget () {}
++         };
++         ]], [[
++         gl_widget widget;
++       ]])],
++       octave_cv_qt_opengl_ok=yes,
++       octave_cv_qt_opengl_ok=no)
++     CPPFLAGS="$ac_octave_save_CPPFLAGS"
++     AC_LANG_POP(C++)
++  ])
++  if test $octave_cv_qt_opengl_ok = yes; then
++    $1
++    :
++  else
++    $2
++    :
++  fi
++])
++dnl
+ dnl Check if the default Fortran INTEGER is 64 bits wide.
+ dnl
+ AC_DEFUN([OCTAVE_CHECK_SIZEOF_FORTRAN_INTEGER], [
+

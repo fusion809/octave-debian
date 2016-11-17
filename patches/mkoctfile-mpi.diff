@@ -1,0 +1,19 @@
+Description: Include MPI headers when building Oct/MEX-files
+Author: Thomas Weber <tweber@debian.org>
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=598227
+Forwarded: not-needed
+Last-Update: 2012-08-18
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/mkoctfile.in.cc
++++ b/src/mkoctfile.in.cc
+@@ -159,7 +159,8 @@ initialize (void)
+   vars["CXXPICFLAG"] = get_variable ("CXXPICFLAG", %OCTAVE_CONF_CXXPICFLAG%);
+   vars["XTRA_CFLAGS"] = get_variable ("XTRA_CFLAGS", %OCTAVE_CONF_XTRA_CFLAGS%);
+   vars["XTRA_CXXFLAGS"] = get_variable ("XTRA_CXXFLAGS",
+-                                        %OCTAVE_CONF_XTRA_CXXFLAGS%);
++                                        std::string("-I/usr/include/mpi ")
++                                        + %OCTAVE_CONF_XTRA_CXXFLAGS%);
+ 
+   vars["AR"] = get_variable ("AR", %OCTAVE_CONF_MKOCTFILE_AR%);
+   vars["RANLIB"] = get_variable ("RANLIB", %OCTAVE_CONF_MKOCTFILE_RANLIB%);

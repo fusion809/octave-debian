@@ -1,0 +1,6 @@
+# We moved away from a symbols file to a plain old shlibs file because
+# the libraries are C++, and maintaining symbols file with C++
+# libraries is a pain. This fact is acknowledged in section 8.6 of
+# the Debian Policy.
+liboctave4: no-symbols-control-file usr/lib/*/liboctinterp.so.4.0.0
+liboctave4: no-symbols-control-file usr/lib/*/liboctave.so.4.0.0

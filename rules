@@ -1,0 +1,104 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+# Needed by octave-common.links
+include /usr/share/dpkg/pkg-info.mk
+DEB_VERSION_UPSTREAM := $(subst ~rc,-rc,$(DEB_VERSION_UPSTREAM))
+export DEB_VERSION_UPSTREAM
+
+# Configure default Java paths using javahelper except on some archs.
+# hurd-i386, kfreebsd-* and sparc have gcj as default, which cause either
+# a compilation failure (hurd-i386) or a test failure (other archs).
+# On mips and mipsel java unit tests calling openjdk-7 cause a bus error at
+# runtime.
+# This arch list must be kept in sync with the arch list qualifying
+# default-jre in debian/control (note: we always want default-jdk in
+# build deps because it is needed for octave-common, see
+# debian/patches/always-build-octave-jar.patch).
+include /usr/share/dpkg/architecture.mk
+NO_JDK_ARCHS := hppa hurd-i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel sparc sparc64
+ifneq (,$(filter $(DEB_HOST_ARCH),$(NO_JDK_ARCHS)))
+WITH_JAVA_FLAGS := --disable-java
+else
+include /usr/share/javahelper/java-vars.mk
+JAVA_LIBDIR := $(firstword $(JVM_CLIENT_DIR) $(JVM_SERVER_DIR))
+WITH_JAVA_FLAGS := --with-java-homedir=$(JAVA_HOME) --with-java-libdir=$(JAVA_LIBDIR)
+endif
+
+# Disable the experimental JIT unconditionally for now. The LLVM library
+# interface is unstable. Linking with LLVM may also cause conflicts with other
+# libraries, for example the mesa graphics stack which also uses LLVM.
+JIT_FLAG := --disable-jit
+
+# HDF5 paths
+ifneq ($(wildcard /usr/lib/$(DEB_HOST_MULTIARCH)/hdf5/serial/libhdf5.so),)
+  HDF5_FLAGS := --with-hdf5-includedir=/usr/include/hdf5/serial \
+	--with-hdf5-libdir=/usr/lib/$(DEB_HOST_MULTIARCH)/hdf5/serial
+endif
+
+%:
+	dh $@ --with autoreconf --parallel
+
+clean:
+	dh clean --with autoreconf
+
+override_dh_auto_configure:
+	# override normal dh_auto_configure call to pass OpenMP flag to it (#631831)
+	dh_auto_configure -- --enable-openmp $(WITH_JAVA_FLAGS) $(JIT_FLAG) $(HDF5_FLAGS)
+	# Avoid triggering the build of oct-gperf.h
+	touch libinterp/parse-tree/oct-gperf.h
+
+# dh_auto_test tries to run "make test", so override it
+override_dh_auto_test:
+	xvfb-run make check
+
+# override normal dh_compress call to avoid compressing .pdf files
+# also, avoid the compression of the info files (see Bug#762078)
+override_dh_compress:
+	dh_compress -O--parallel --exclude=.pdf
+
+# override this call, so we do not pass the --parallel option to it; 
+# "make -j2 install" does not work as of now
+override_dh_auto_install:
+	# Smuggle our configuration file into the installed files
+	mkdir -p debian/tmp/etc && cp debian/octave.conf debian/tmp/etc/
+	dh_auto_install --max-parallel=1
+	# Delete .la files (for liboctgui)
+	find debian/tmp -name '*.la' -delete
+
+# The info files have references to .png images
+# Rename them by prefixing their name with "octave-", adapt the *.info files to
+#  this new name, and ship the images under /usr/share/info
+override_dh_installinfo-indep:
+	dh_installinfo
+	for f in `grep -a src=\".*\" doc/interpreter/*.info* | sed 's/.*src="\([^"]*\)".*/\1/'`; do \
+		cp doc/interpreter/$$f debian/octave-info/usr/share/info/octave-$$f; \
+		sed -i "s/src=\"$$f\"/src=\"octave-$$f\"/g" debian/octave-info/usr/share/info/octave.info*; \
+	done
+
+# Handle migration to automatic debug packages
+override_dh_strip:
+	dh_strip -a --dbgsym-migration='octave-dbg (<< 4.0.1~rc2-1~)'
+
+# Strip the executable bit from the .oct files
+# Cannot be done in dh_fixperms, as then dh_strip and dh_shlibdeps don't take the
+# .oct files into account
+override_dh_shlibdeps:
+	dh_shlibdeps -O--parallel
+	find debian/octave -name '*.oct' -print0 2>/dev/null | xargs -0r chmod 644
+
+# Avoid useless call of ldconfig in the triggers script of the octave
+# package
+override_dh_makeshlibs:
+	dh_makeshlibs --package=octave --noscripts
+	dh_makeshlibs --no-package=octave
+
+get-orig-source:
+	uscan --force-download --rename --destdir .
+.PHONY: get-orig-source

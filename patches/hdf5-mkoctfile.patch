@@ -1,0 +1,19 @@
+Description: Add hdf5 path to INCFLAGS in mkoctfile
+ So that packages build-depending on liboctave-dev don't have to care.
+Author: Gilles Filippini <pini@debian.org>
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=756689
+Forwarded: no
+Reviewed-by: Sébastien Villemot <sebastien@debian.org>
+Last-Update: 2014-08-14
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/src/mkoctfile.in.cc
++++ b/src/mkoctfile.in.cc
+@@ -139,6 +139,7 @@ initialize (void)
+     = "-I" + quote_path (vars["OCTINCLUDEDIR"] + "/..")
+       + " -I" + quote_path (vars["OCTINCLUDEDIR"]);
+ #endif
++  DEFAULT_INCFLAGS += std::string(" ") + %OCTAVE_CONF_HDF5_CPPFLAGS%;
+   if (vars["INCLUDEDIR"] != "/usr/include")
+     DEFAULT_INCFLAGS += " -I" + quote_path (vars["INCLUDEDIR"]);
+ 

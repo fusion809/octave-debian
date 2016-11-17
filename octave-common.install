@@ -1,0 +1,9 @@
+#!/usr/bin/dh-exec
+
+usr/share/octave /usr/share/
+
+# install the configuration file we copied into the built tmp tree
+/etc/octave.conf /etc
+
+# Install the Debian-specific error handler
+debian/debian_missing_handler.m /usr/share/octave/${DEB_VERSION_UPSTREAM}/m/debian/

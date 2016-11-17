@@ -1,0 +1,674 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Octave
+Upstream-Contact: John W. Eaton <jwe@octave.org>
+Source: http://www.octave.org
+
+Files: *
+Copyright: 1992-2015 John W. Eaton <jwe@octave.org>
+           1984-1985, 1987-2015 Free Software Foundation, Inc
+           1997-2015 David Bateman
+           2008-2015 VZLU Prague, a.s., Czech Republic
+           1995-2015 Kurt Hornik
+           2010-2015 Rik Wehbring
+           2008-2015 Jaroslav Hajek
+           1998-2015 Andy Adler
+           1999-2015 Kai Habel
+           1993-2015 Paul Kienzle
+           2007-2015 Michael Goffioul
+           1995-2015 Friedrich Leisch
+           2007-2015 Ben Abbott
+           2005-2015 Bill Denney
+           1993-2015 Shai Ayal
+           1995-2015 Andreas Weingessel
+           1996-2015 Daniel Calvelo
+           2005-2015 Søren Hauberg <hauberg@gmail.com>
+           2000-2015 Teemu Ikonen
+           2012-2015 Daniel Kraft
+           2009-2015 Martin Helm
+           2005-2015 William Poetra Yoga Hadisoeseno
+           1993-2015 Auburn University
+           2001-2015 Ben Sapp
+           2000-2015 Gabriele Pannocchia
+           2005-2015 Ivana Varekova
+           2009-2015 Jason Riedy
+           2005-2015 Nicolo' Giorgetti
+           1996-2015 A. S. Hodel
+           1993-2015 A. Scottedward Hodel
+           2006-2015 Alexander Barth
+           2009-2015 Benjamin Lindner
+           2008-2015 Radek Salac
+           2009-2015 Carlo de Falco
+           2000-2015 Etienne Grossmann
+           2008-2015 Julian Schnidder
+           2005-2015 Ludwig Schwardt, Kevin Ruland
+           2005-2015 Michael Zeising
+           2006-2015 Michel D. Schmid
+           1999-2015 Peter Ekberg
+           2004-2015 Piotr Krzyzanowski
+           2007-2015 Regents of the University of California
+           2006-2015 Sylvain Pelissier
+           2008-2015 Thorsten Meyer
+           1997-2015 Vincent Cautaerts
+           1995, 2000-2001 Maurice LeBrun
+           2000, 2002 Joao Cardoso
+           2000-2002, 2004 Alan W. Irwin
+           2004 Andrew Ross
+           2004 Victor Munoz
+           2003 Alberto Terruzzi
+           2012 Alexander Klein
+           2004-2015 Alois Schloegl
+           2002-2015 Andreas Stahel
+           2008-2015 Thomas L. Scofield <scofield@calvin.edu>
+           2010 David Grundberg
+           2005 Stefan van der Walt <stefan@sun.ac.za>
+           2006 Thomas Weber <tweber@debian.ors>
+           2007-2009 John Swensen
+           2011-2015 John P. Swensen
+           1998-2015 Ariel Tankus
+           2012-2015 Carnë Draug
+           2005-2015 Mohamed Kamoun
+           2008-2015 Robert Platt
+           2000-2015 Bill Lash
+           2001-2015 Cai Jianming
+           2010 Christos Dimitrakakis
+           1999-2015 Daniel Heiserer
+           2001, 2005-2015 Laurent Mazet
+           2006-2015 Daniel Sebald
+           2007-2015 Jordi Gutiérrez Hermoso <jordigh@octave.org>
+           2006-2015 Marco Caliari <marco.caliari@univr.it>
+           1999-2015 David M. Doolin
+           1993-2015 Dirk Laurie
+           2009-2015 E. Jason Riedy
+           2009-2015 Eric Chassande-Mottin, CNRS (France)
+           2012-2015 Philip Nienhuis
+           2006-2015 Frederick (Rick) A Niles
+           2005-2015 Hoxide Ma
+           2012-2015 Iain Murray
+           2012-2015 Jarno Rajahalme
+           2008-2015 Jonathan Stickel
+           2001-2015 Rolf Fabian
+           2007 Stallmanfacts.com
+           2006-2015 Keith Goodman
+           2008-2015 N.J. Higham
+           2010 Richard T. Guy <guyrt7@wfu.edu>
+           2007-2015 Michael Weitzel
+           1998-2015 Nicol N. Schraudolph
+           2010-2015 Pedro Gonnet
+           2004-2015 Petr Mikulik
+           2001-2015 Ross Lippert
+           2007-2015 Thomas Treichl
+           2009-2015 Tony Richardson
+           1998-2015 Walter Gautschi
+           1997-2002 Makoto Matsumoto and Takuji Nishimura
+           2011-2015 Jacob Dawid
+           2012-2015 Max Brister
+           2010-2015 Martin Hepperle
+           2013-2015 John Donoghue
+           2009 P. L. Lucas
+           2012-2015 Pantxo Diribarne
+           2009 Nokia Corporation and/or its subsidiary(-ies)
+           2012-2015 Torsten <ttl@justmail.de>
+           2008 Kristian Rumberg
+           2013-2015 Julien Bect
+           2004 Josep Mones i Teixidor
+           2013-2015 Michael D. Godfrey
+           2013-2015 Mike Miller
+           2013-2015 Sébastien Villemot <sebastien@debian.org>
+           2007 Muthiah Annamalai
+           2013-2015 Carl Osterwisch
+           2001, 2013 David Billinghurst
+           2003, 2013 Jaakko Ruohio
+           2012-2015 Erik Kjellson
+           2012-2015 Fotios Kasolis
+           1993-1998 Karl Berry
+           2012-2015 Juan Pablo Carbajal
+           2013-2015 Leopoldo Cerbaro <redbliss@libero.it>
+           2012-2015 Richard Crozier
+           2007 Paul Thomas
+           2007 Christoph Spiel
+           2000-2015 Dirk Eddelbuettel
+           2012-2015 Jonas Lundgren
+           2014-2015 Eduardo Ramos Fernández <eduradical951@gmail.com>
+           2013-2015 Kai T. Ohlhus <k.ohlhus@gmail.com>
+           2014-2015 Andreas Weber
+           2013-2015 Vytautas Jančauskas
+           2014-2015 Nir Krakauer
+           2014-2015 Markus Bergholz
+           2014-2015 Colin Foster
+           2014-2015 Massimiliano Fasi
+           2013-2015 Arun Giridhar
+           2014-2015 Willem Atsma
+           2014-2015 Nathan Podlich
+           2009-2015 Robert T. Short
+License: GPL-3+
+
+Files: debian/*
+Copyright: Andrew D. Fernandes <adfernan@cnd.mcgill.ca>
+           Dale Scheetz <dwarf@polaris.net>
+           Dirk Eddelbuettel <edd@debian.org>
+           2005-2009, 2012-2015 Rafael Laboissiere <rafael@laboissiere.net>
+           2006-2013 Thomas Weber <tweber@debian.org>
+           2011-2015 Sébastien Villemot <sebastien@debian.org>
+           2013-2014 Mike Miller <mtmiller@debian.org>
+License: GPL-3+           
+
+Files: liboctave/cruft/amos/*
+       liboctave/cruft/dassl/*
+       liboctave/cruft/fftpack/*
+       liboctave/cruft/slatec-err/*
+       liboctave/cruft/slatec-fn/*
+Copyright: none
+License: public-domain
+ The Library is in the public domain and distributed by the Energy Science
+ and Technology Software Center.
+ .
+ Energy Science and Technology Software Center
+ P.O. Box 1020
+ Oak Ridge, TN  37831
+Comment:
+ Note that the AMOS library is part of SLATEC and is therefore covered by the
+ same license.
+
+Files: liboctave/cruft/daspk/*
+Copyright: none
+License: public-domain
+ Work performed under the auspices of the U.S. Department of Energy
+ by Lawrence Livermore National Laboratory under contract number 
+ W-7405-Eng-48.
+
+Files: liboctave/cruft/lapack-xtra/*
+       liboctave/cruft/blas-xtra/xerbla.f
+Copyright: 1992-2006 The University of Tennessee
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ .
+ - Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer. 
+ .
+ - Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer listed
+   in this license in the documentation and/or other materials
+   provided with the distribution.
+ .
+ - Neither the name of the copyright holders nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+ . 
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+Files: liboctave/cruft/odepack/*
+Copyright: none
+License: public-domain
+ Written by Alan C. Hindmarsh
+ Center for Applied Scientific Computing
+ Lawrence Livermore National Laboratory
+ Livermore, CA 94551, U.S.A.
+ .
+ The following Fortran solvers for ordinary differential equation (ODE) systems
+ were written at LLNL. All are in the Public Domain and are freely available
+ from the CASC Software Download Site.
+
+Files: liboctave/cruft/quadpack/*
+Copyright: none
+License: public-domain
+ QUADPACK originated from a joint project of R. Piessens and E. de
+ Doncker-Kapenga (Appl. Math. and Progr. Div.- K.U.Leuven, Belgium),
+ C. Überhuber (Inst. Fuer Math.- Techn.U.Wien, Austria), and D. Kahaner
+ (Nation. Bur. of Standards- Washington D.C., U.S.A.). 
+
+Files: liboctave/cruft/ranlib/*
+Copyright: none
+License: public-domain
+ We place the Randlib code that we have written in the public domain.  
+ .
+                                 NO WARRANTY
+ .    
+     WE PROVIDE ABSOLUTELY  NO WARRANTY  OF ANY  KIND  EITHER  EXPRESSED OR
+     IMPLIED,  INCLUDING BUT   NOT LIMITED TO,  THE  IMPLIED  WARRANTIES OF
+     MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK
+     AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS  WITH YOU.  SHOULD
+     THIS PROGRAM PROVE  DEFECTIVE, YOU ASSUME  THE COST  OF  ALL NECESSARY
+     SERVICING, REPAIR OR CORRECTION.
+ .    
+     IN NO  EVENT  SHALL THE UNIVERSITY  OF TEXAS OR  ANY  OF ITS COMPONENT
+     INSTITUTIONS INCLUDING M. D.   ANDERSON HOSPITAL BE LIABLE  TO YOU FOR
+     DAMAGES, INCLUDING ANY  LOST PROFITS, LOST MONIES,   OR OTHER SPECIAL,
+     INCIDENTAL   OR  CONSEQUENTIAL DAMAGES   ARISING   OUT  OF  THE USE OR
+     INABILITY TO USE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA OR
+     ITS ANALYSIS BEING  RENDERED INACCURATE OR  LOSSES SUSTAINED  BY THIRD
+     PARTIES) THE PROGRAM.
+
+Files: liboctave/cruft/Faddeeva/Faddeeva.cc
+       liboctave/cruft/Faddeeva/Faddeeva.hh
+Copyright: 2012 Massachusetts Institute of Technology
+License: Expat
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ . 
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+Files: m4/ax_blas.m4
+       m4/ax_lapack.m4
+       m4/ax_pthread.m4
+       m4/ax_openmp.m4
+       m4/ax_blas_f77_func.m4
+Copyright: 2008-2009 Steven G. Johnson <stevenj@alum.mit.edu>
+           2008 Jaroslav Hajek <highegg@gmail.com>
+           2011 Daniel Richard G. <skunk@iSKUNK.ORG>
+           2015 John W. Peterson <jwpeterson@gmail.com>
+License: GPL-3+ with Autoconf exception
+
+Files: m4/libtool.m4
+Copyright: 1996-2001, 2003-2011 Free Software Foundation, Inc
+License: GPL-2+ with Libtool exception
+ GNU Libtool is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2 of
+ the License, or (at your option) any later version.
+ .
+ As a special exception to the GNU General Public License,
+ if you distribute this file as part of a program or library that
+ is built using GNU Libtool, you may include this file under the
+ same distribution terms that you use for the rest of that program.
+ .
+ GNU Libtool is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with GNU Libtool; see the file COPYING.  If not, a copy
+ can be downloaded from http://www.gnu.org/licenses/gpl.html, or
+ obtained by writing to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+Files: aclocal.m4
+       m4/00gnulib.m4
+       m4/absolute-header.m4
+       m4/base64.m4
+       m4/canonicalize.m4
+       m4/ceil.m4
+       m4/ceilf.m4
+       m4/chdir-long.m4
+       m4/check-math-lib.m4
+       m4/close.m4
+       m4/closedir.m4
+       m4/codeset.m4
+       m4/configmake.m4
+       m4/copysign.m4
+       m4/copysignf.m4
+       m4/d-type.m4
+       m4/dirent_h.m4
+       m4/dirfd.m4
+       m4/dirname.m4
+       m4/double-slash-root.m4
+       m4/dup.m4
+       m4/dup2.m4
+       m4/eealloc.m4
+       m4/environ.m4
+       m4/errno_h.m4
+       m4/error.m4
+       m4/exponentd.m4
+       m4/exponentf.m4
+       m4/exponentl.m4
+       m4/extensions.m4
+       m4/extern-inline.m4
+       m4/fchdir.m4
+       m4/fclose.m4
+       m4/fcntl-o.m4
+       m4/fcntl.m4
+       m4/fcntl_h.m4
+       m4/fdopendir.m4
+       m4/fflush.m4
+       m4/filemode.m4
+       m4/filenamecat.m4
+       m4/float_h.m4
+       m4/floor.m4
+       m4/floorf.m4
+       m4/fnmatch.m4
+       m4/fopen.m4
+       m4/fpieee.m4
+       m4/fpurge.m4
+       m4/freading.m4
+       m4/frexp.m4
+       m4/frexpf.m4
+       m4/fseek.m4
+       m4/fseeko.m4
+       m4/fstat.m4
+       m4/fstatat.m4
+       m4/ftell.m4
+       m4/ftello.m4
+       m4/getcwd-abort-bug.m4
+       m4/getcwd-path-max.m4
+       m4/getcwd.m4
+       m4/getdtablesize.m4
+       m4/gethostname.m4
+       m4/getlogin_r.m4
+       m4/getopt.m4
+       m4/gettimeofday.m4
+       m4/gl-openssl.m4
+       m4/glob.m4
+       m4/gnulib-common.m4
+       m4/include_next.m4
+       m4/inttypes_h.m4
+       m4/isatty.m4
+       m4/isnand.m4
+       m4/isnanf.m4
+       m4/isnanl.m4
+       m4/largefile.m4
+       m4/link.m4
+       m4/localcharset.m4
+       m4/locale-fr.m4
+       m4/locale-ja.m4
+       m4/locale-zh.m4
+       m4/longlong.m4
+       m4/lseek.m4
+       m4/lstat.m4
+       m4/ltsugar.m4
+       m4/ltversion.m4
+       m4/lt~obsolete.m4
+       m4/malloc.m4
+       m4/math_h.m4
+       m4/mathfunc.m4
+       m4/mbsinit.m4
+       m4/mbsrtowcs.m4
+       m4/mbstate_t.m4
+       m4/md5.m4
+       m4/memchr.m4
+       m4/mkdir.m4
+       m4/mkfifo.m4
+       m4/mkostemp.m4
+       m4/mmap-anon.m4
+       m4/mode_t.m4
+       m4/msvc-inval.m4
+       m4/msvc-nothrow.m4
+       m4/multiarch.m4
+       m4/nanosleep.m4
+       m4/nocrash.m4
+       m4/nproc.m4
+       m4/off_t.m4
+       m4/open.m4
+       m4/openat.m4
+       m4/opendir.m4
+       m4/printf.m4
+       m4/putenv.m4
+       m4/raise.m4
+       m4/readdir.m4
+       m4/readlink.m4
+       m4/realloc.m4
+       m4/rename.m4
+       m4/rewinddir.m4
+       m4/rmdir.m4
+       m4/round.m4
+       m4/roundf.m4
+       m4/save-cwd.m4
+       m4/secure_getenv.m4
+       m4/select.m4
+       m4/setenv.m4
+       m4/sigaction.m4
+       m4/signal_h.m4
+       m4/signalblocking.m4
+       m4/signbit.m4
+       m4/size_max.m4
+       m4/sleep.m4
+       m4/socketlib.m4
+       m4/sockets.m4
+       m4/socklen.m4
+       m4/ssize_t.m4
+       m4/st_dm_mode.m4
+       m4/stat.m4
+       m4/stdalign.m4
+       m4/stdbool.m4
+       m4/stddef_h.m4
+       m4/stdint.m4
+       m4/stdint_h.m4
+       m4/stdio_h.m4
+       m4/stdlib_h.m4
+       m4/strcase.m4
+       m4/strdup.m4
+       m4/strerror.m4
+       m4/strftime.m4
+       m4/string_h.m4
+       m4/strings_h.m4
+       m4/strndup.m4
+       m4/strptime.m4
+       m4/symlink.m4
+       m4/sys_select_h.m4
+       m4/sys_socket_h.m4
+       m4/sys_stat_h.m4
+       m4/sys_time_h.m4
+       m4/sys_times_h.m4
+       m4/sys_types_h.m4
+       m4/sys_uio_h.m4
+       m4/sys_utsname_h.m4
+       m4/tempname.m4
+       m4/time_h.m4
+       m4/time_r.m4
+       m4/times.m4
+       m4/tm_gmtoff.m4
+       m4/tmpdir.m4
+       m4/tmpfile.m4
+       m4/trunc.m4
+       m4/truncf.m4
+       m4/uname.m4
+       m4/unistd-safer.m4
+       m4/unistd_h.m4
+       m4/unlink.m4
+       m4/vasnprintf.m4
+       m4/warn-on-use.m4
+       m4/wchar_h.m4
+       m4/wchar_t.m4
+       m4/wctype_h.m4
+       m4/wint_t.m4
+       m4/xalloc.m4
+       m4/xgetcwd.m4
+       m4/xsize.m4
+       m4/xstrndup.m4
+Copyright: 1992-2015, Free Software Foundation, Inc
+License: other
+ This file is free software; the Free Software Foundation
+ gives unlimited permission to copy and/or distribute it,
+ with or without modifications, as long as this notice is preserved.
+
+Files: m4/pkg.m4
+Copyright: 2004 Scott James Remnant <scott@netsplit.com>
+License: GPL-2+
+
+Files: libgui/qterminal/libqterminal/unix/Filter.cpp
+       libgui/qterminal/libqterminal/unix/Filter.h
+       libgui/qterminal/libqterminal/unix/KeyboardTranslator.cpp
+       libgui/qterminal/libqterminal/unix/KeyboardTranslator.h
+       libgui/qterminal/libqterminal/unix/ScreenWindow.cpp
+       libgui/qterminal/libqterminal/unix/ScreenWindow.h
+       libgui/qterminal/libqterminal/unix/Character.h
+       libgui/qterminal/libqterminal/unix/CharacterColor.h
+       libgui/qterminal/libqterminal/unix/Emulation.h
+       libgui/qterminal/libqterminal/unix/Screen.h
+       libgui/qterminal/libqterminal/unix/Vt102Emulation.h
+       libgui/qterminal/libqterminal/unix/TerminalModel.cpp
+       libgui/qterminal/libqterminal/unix/TerminalModel.h
+       libgui/qterminal/libqterminal/unix/TerminalView.cpp
+       libgui/qterminal/libqterminal/unix/TerminalView.h
+       libgui/qterminal/libqterminal/unix/History.cpp
+       libgui/qterminal/libqterminal/unix/History.h
+       libgui/qterminal/libqterminal/unix/Screen.cpp
+       libgui/qterminal/libqterminal/unix/Vt102Emulation.cpp
+       libgui/qterminal/libqterminal/unix/BlockArray.cpp
+       libgui/qterminal/libqterminal/unix/BlockArray.h
+       libgui/qterminal/libqterminal/unix/Emulation.cpp
+Copyright: 1997-1998, 2013 Lars Doelle <lars.doelle@on-line.de>
+           2007-2008, 2013 Robert Knight <robertknight@gmail.com>
+           2012-2013 Jacob Dawid <jacob.dawid@googlemail.com>
+           2000, 2013 Stephan Kulow <coolo@kde.org>
+License: GPL-2+
+
+Files: libgui/qterminal/libqterminal/unix/kpty.h
+       libgui/qterminal/libqterminal/unix/kpty_p.h
+       libgui/qterminal/libqterminal/unix/TerminalCharacterDecoder.cpp
+       libgui/qterminal/libqterminal/unix/TerminalCharacterDecoder.h
+       libgui/qterminal/libqterminal/unix/QUnixTerminalImpl.cpp
+       libgui/qterminal/libqterminal/unix/QUnixTerminalImpl.h
+       libgui/qterminal/libqterminal/unix/kpty.cpp
+Copyright: 2003, 2007, 2013 Oswald Buddenhagen <ossi@kde.org>
+           2006-2007, 2013 Robert Knight <robertknight@gmail.com>
+           2008 e_k (e_k@users.sourceforge.net)
+           2012-2015 Jacob Dawid <jacob.dawid@cybercatalyst.com>
+           2002, 2013 Waldo Bastian <bastian@kde.org>
+License: LGPL-2+
+
+Files: libgui/graphics/images/*
+Copyright: 2006-2007 Everaldo Coelho
+License: LGPL-3+
+
+Files: scripts/polynomial/private/__splinefit__.m
+Copyright: 2010 Jonas Lundgren
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without 
+ modification, are permitted provided that the following conditions are 
+ met:
+ .
+     * Redistributions of source code must retain the above copyright 
+       notice, this list of conditions and the following disclaimer.
+     * Redistributions in binary form must reproduce the above copyright 
+       notice, this list of conditions and the following disclaimer in 
+       the documentation and/or other materials provided with the distribution
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License as
+ published by the Free Software Foundation; either version 2,
+ or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License, version 2, can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with Dynare.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 3 can be found in the file `/usr/share/common-licenses/GPL-3'.
+
+License: GPL-3+ with Autoconf exception
+ This program is free software: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation, either version 3 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 3 can be found in the file `/usr/share/common-licenses/GPL-3'.
+ .
+ As a special exception, the respective Autoconf Macro's copyright owner
+ gives unlimited permission to copy, distribute and modify the configure
+ scripts that are the output of Autoconf when processing the Macro. You
+ need not follow the terms of the GNU General Public License when using
+ or distributing such scripts, even though portions of the text of the
+ Macro appear in them. The GNU General Public License (GPL) does govern
+ all other use of the material that constitutes the Autoconf Macro.
+ .
+ This special exception to the GPL applies to versions of the Autoconf
+ Macro released by the Autoconf Archive. When you make and distribute a
+ modified version of the Autoconf Macro, you may extend this special
+ exception to the GPL to apply to your modified version as well.
+
+License: LGPL-2+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU Lesser General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/LGPL-2'.
+
+License: LGPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU Lesser General Public License
+ version 3 can be found in the file `/usr/share/common-licenses/LGPL-3'.

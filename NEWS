@@ -1,0 +1,42 @@
+octave (4.0.0~rc3-1) experimental; urgency=low
+
+  A graphical user interface is now the default when running Octave
+  interactively.  The start-up option --no-gui will run the familiar
+  command line interface, and still allows use of the GUI dialogs and
+  qt plotting toolkit.  The option --no-gui-libs runs a minimalist
+  command line interface that does not link with the Qt libraries and
+  uses the fltk toolkit for plotting.
+
+  Starting with this release, the Octave add-ons packaged in Debian will
+  no longer autoload by default. You may need to adapt existing scripts,
+  by adding "pkg load <package>" statements.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 24 Apr 2015 15:32:45 +0200
+
+octave (3.8.1-2) unstable; urgency=medium
+
+  The just-it-time (JIT) compiler has been disabled in this version,
+  because it creates problems with the Gallium llvmpipe Mesa driver.
+  Since the JIT is currently very basic, it is not worth the trouble. It
+  may be re-enabled later when the benefits outweigh the costs. See
+  #743260 for more details.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Wed, 30 Apr 2014 10:46:37 +0200
+
+octave (3.8.0~rc1-1) experimental; urgency=medium
+
+  Starting with this version, the octave package now contains an
+  experimental graphical user interface (GUI) based on the Qt toolkit.
+  That GUI can be started by giving the `--force-gui' option to the
+  octave binary.
+
+  For those who want to keep the lower memory footprint of a pure text
+  interface, there is the `octave-cli' executable which is not linked
+  against Qt.
+
+  Starting with this version, Octave incorporates a just-in-time (JIT)
+  compiler, which can offer performance improvements in some situations.
+  Since it is still experimental, the JIT is disabled by default, but
+  you can activate it with the `jit_enable' command.
+
+ -- Sébastien Villemot <sebastien@debian.org>  Fri, 20 Dec 2013 20:47:36 +0100

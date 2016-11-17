@@ -1,0 +1,215 @@
+Source: octave
+Section: math
+Priority: optional
+Maintainer: Mike Miller <mtmiller@debian.org>
+XSBC-Original-Maintainer: Debian Octave Group <pkg-octave-devel@lists.alioth.debian.org>
+Uploaders: Sébastien Villemot <sebastien@debian.org>,
+  Rafael Laboissiere <rafael@laboissiere.net>
+Build-Depends: automake,
+  debhelper (>= 9.20160114~),
+  default-jdk,
+  desktop-file-utils,
+  dh-autoreconf,
+  dh-exec,
+  dpkg-dev (>= 1.16.1),
+  epstool,
+  flex,
+  gawk,
+  gfortran,
+  ghostscript,
+  gnuplot-nox,
+  javahelper,
+  less,
+  libarpack2-dev (>= 2.1+parpack96.dfsg-2),
+  libblas-dev (>= 1.2-7),
+  libcurl4-gnutls-dev | libcurl4-dev,
+  libfftw3-dev,
+  libfltk1.3-dev,
+  libfontconfig1-dev,
+  libftgl-dev,
+  libgl2ps-dev,
+  libglpk-dev (>= 4.15),
+  libgraphicsmagick++1-dev,
+  libhdf5-dev (>= 1.8.8),
+  liblapack-dev (>= 3.4.1-4),
+  libncurses5-dev,
+  libosmesa6-dev,
+  libpcre3-dev,
+  libqhull-dev,
+  libqrupdate-dev,
+  libqscintilla2-dev,
+  libqt4-dev,
+  libqt4-opengl-dev,
+  libreadline-dev,
+  libsndfile1-dev,
+  libsuitesparse-dev (>= 1:3.2.0),
+  libxft-dev,
+  portaudio19-dev,
+  pstoedit,
+  texinfo,
+  texlive-generic-recommended,
+  texlive-fonts-recommended,
+  texlive-latex-base,
+  transfig,
+  unzip,
+  xauth,
+  xvfb,
+  zip
+Standards-Version: 3.9.8
+Homepage: http://www.octave.org/
+Vcs-Git: https://anonscm.debian.org/git/pkg-octave/octave.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-octave/octave.git
+
+Package: octave
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, texinfo, octave-common (= ${source:Version}),
+         liboctave3 (= ${binary:Version})
+Recommends: gnuplot-x11 | gnuplot-qt, libopenblas-base | libatlas3-base,
+ pstoedit,
+ default-jre-headless [!hppa !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !mips !mipsel !sparc !sparc64],
+ octave-info
+Suggests: octave-doc,
+ octave-htmldoc
+Conflicts: octave-java
+Replaces: octave-java
+Breaks: dynare (<< 4.4.3-2),
+  h5utils (<= 1.12.1-2.1) [arm64],
+  h5utils (<= 1.12.1-2.1+b1) [ppc64el],
+  h5utils (<= 1.12.1-2.1+b2) [amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390x sparc],
+  libsbml5-octave (<< 5.10.0+dfsg-1+b1) [amd64 armel armhf i386 s390x],
+  octave-audio (<< 1.1.4-6),
+  octave-biosig (<< 1.3.0-2.0build2),
+  octave-communications (<< 1.2.1-1),
+  octave-control (<< 2.8.3-1),
+  octave-econometrics (<< 1:1.1.1-2build1),
+  octave-gdf (<< 0.1.2-2.0build2),
+  octave-general (<< 2.0.0-1),
+  octave-geometry (<< 1.7.0-2build1),
+  octave-gmt (<< 4.5.12-1+b1) [amd64 arm64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390x sparc],
+  octave-gsl (<< 1.0.8-6build2),
+  octave-image (<< 2.4.0-1),
+  octave-io (<< 2.2.4-1build2),
+  octave-lhapdf (<< 5.9.1-3build2),
+  octave-linear-algebra (<< 2.2.2-1),
+  octave-ltfat (<< 2.1.0+dfsg-1),
+  octave-miscellaneous (<< 1.2.1-2build2),
+  octave-mpi (<= 1.2.0-1) [amd64 arm64 armel armhf kfreebsd-amd64 mips mipsel powerpc ppc64el s390x sparc],
+  octave-mpi (<= 1.2.0-1+b1) [hurd-i386 i386 kfreebsd-i386],
+  octave-msh (<< 1.0.10-1build1),
+  octave-nan (<< 2.8.1-1),
+  octave-nlopt (<< 2.4.1+dfsg-2),
+  octave-nurbs (<< 1.3.9-1),
+  octave-ocs (<< 0.1.3-2+b1) [amd64 arm64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390x sparc],
+  octave-octcdf (<< 1.1.8-1),
+  octave-odepkg (<< 0.8.5-1),
+  octave-optim (<< 1.4.0-1+b1) [amd64 arm64 armel armhf kfreebsd-amd64 mips mipsel powerpc ppc64el sparc],
+  octave-optim (<< 1.4.0-1+b2) [hurd-i386 i386 kfreebsd-i386 s390x],
+  octave-optiminterp (<< 0.3.4-2),
+  octave-parallel (<< 3.0.0-1),
+  octave-pfstools (<< 1.8.5-2.1),
+  octave-plplot (<= 5.10.0+dfsg-1),
+  octave-psychtoolbox-3 (<< 3.0.11.20140816.dfsg1-1ubuntu4),
+  octave-quaternion (<< 2.2.2-1build2),
+  octave-secs2d (<< 0.0.8-6),
+  octave-signal (<< 1.3.2-1),
+  octave-sockets (<< 1.2.0-1),
+  octave-strings (<< 1.1.0-2+b1) [amd64 arm64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390x sparc],
+  octave-struct (<< 1.0.11-1),
+  octave-sundials (<< 2.5.0-3ubuntu3),
+  octave-symbolic (<< 2.2.2-1),
+  octave-tsa (<< 4.2.9-1),
+  octave-vlfeat (<< 0.9.17+dfsg0-6build2),
+  pfstools (<< 1.8.5-2.1),
+  sdpam (<< 7.3.9+dfsg-1build2),
+Description: GNU Octave language for numerical computations
+ Octave is a (mostly Matlab (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ Octave can be dynamically extended with user-supplied C++ files.
+
+Package: octave-common
+Depends: ${misc:Depends}
+Architecture: all
+Description: architecture-independent files for octave
+ Octave is a (mostly Matlab (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ Octave can be dynamically extended with user-supplied C++ files.
+ .
+ This package provides the architecture-independent files (Octave scripts
+ and other helper files).
+
+Package: octave-doc
+Depends: ${misc:Depends}
+Architecture: all
+Section: doc
+Suggests: octave, xpdf | pdf-viewer
+Description: PDF documentation on the GNU Octave language
+ Octave is a (mostly Matlab (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the following documentation in PDF format: a reference
+ card in a4, letter and legal formats, a document on the C++ classes used by
+ Octave, as well as the main octave documentation which is also included in
+ info format in the octave-info package.
+
+Package: octave-htmldoc
+Architecture: all
+Depends: ${misc:Depends}
+Section: doc
+Suggests: octave, lynx-cur | www-browser
+Description: HTML documentation on the GNU Octave language
+ Octave is a (mostly Matlab (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the following documentation in html format: a document
+ on the C++ classes used by Octave, as well as the main octave documentation
+ which is also included in info format in the main Octave package.
+
+Package: octave-info
+Architecture: all
+Depends: info, ${misc:Depends}
+Section: doc
+Description: GNU Info documentation on the GNU Octave language
+ Octave is a (mostly Matlab (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the following documentation in info format: a document
+ on the C++ classes used by Octave, as well as the main octave documentation
+ which is needed for the 'help -i foo' command within Octave.
+
+Package: liboctave4
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Section: libs
+Description: Shared libraries of the GNU Octave language
+ Octave is a (mostly MATLAB (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the shared libraries used by the interpreter.
+
+Package: liboctave-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ liboctave3 (= ${binary:Version}), octave (= ${binary:Version}),
+ libreadline-dev | libreadline6-dev | libreadline5-dev, libncurses5-dev,
+ libhdf5-dev (>= 1.8.8) | libhdf5-openmpi-dev (>= 1.8.8) | libhdf5-mpich-dev (>= 1.8.8),
+ libgl1-mesa-dev | libgl-dev,
+ libblas-dev (>=1.2-7) | libblas.so, liblapack-dev (>=3.2.1-7) | liblapack.so,
+ libfftw3-dev, gfortran, gcc, g++
+Section: libdevel
+Description: Development files for the GNU Octave language
+ Octave is a (mostly Matlab (R) compatible) high-level language, primarily
+ intended for numerical computations. It provides a convenient command-line
+ interface for solving linear and nonlinear problems numerically.
+ .
+ This package provides the header files and the mkoctfile script used for
+ extending Octave via compiled code.

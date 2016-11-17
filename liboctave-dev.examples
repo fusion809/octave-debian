@@ -1,0 +1,7 @@
+examples/code/*.cc
+examples/code/*.m
+examples/code/*.c
+examples/code/*.f
+examples/code/@FIRfilter/
+examples/code/@polynomial/
+examples/data/penny.mat

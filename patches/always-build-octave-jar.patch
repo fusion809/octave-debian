@@ -1,0 +1,54 @@
+Description: Ensure that octave.jar is built even if java is disabled
+ On some archs we pass --disable-java to the configure script, but we still
+ want octave-common to contain octave.jar if built on those archs.
+Author: Sébastien Villemot <sebastien@debian.org>
+Forwarded: not-needed
+Reviewed-by: Rafael Laboissiere <rafael@laboissiere.net>
+Last-Update: 2015-04-18
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/scripts/java/module.mk
++++ b/scripts/java/module.mk
+@@ -1,3 +1,6 @@
++JAVAC=javac
++JAR=jar
++
+ FCN_FILE_DIRS += java
+ 
+ java_FCN_FILES = \
+@@ -17,13 +20,10 @@ PKG_ADD_FILES += java/PKG_ADD
+ 
+ DIRSTAMP_FILES += java/$(octave_dirstamp)
+ 
+-if AMCOND_HAVE_JAVA
+ JAR_FILES += java/octave.jar
+-endif
+ 
+ org_octave_dir = org/octave
+ 
+-if AMCOND_HAVE_JAVA
+ JAVA_SRC = \
+   $(org_octave_dir)/ClassHelper.java \
+   $(org_octave_dir)/OctClassLoader.java \
+@@ -34,7 +34,6 @@ JAVA_SRC = \
+   $(org_octave_dir)/DlgListener.java \
+   $(org_octave_dir)/TeXtranslator.java \
+   $(org_octave_dir)/TeXcode.java
+-endif
+ 
+ JAVA_CLASSES = $(JAVA_SRC:.java=.class)
+ 
+@@ -64,13 +63,11 @@ java/images.stamp: $(srcdir_java_JAVA_IM
+ 	fi && \
+ 	touch $@
+ 
+-if AMCOND_HAVE_JAVA
+ java/octave.jar: java/images.stamp $(java_JAVA_CLASSES)
+ 	$(AM_V_GEN)rm -f $@-t $@ && \
+ 	( cd java; \
+ 	  "$(JAR)" cf octave.jar-t $(JAVA_CLASSES) $(JAVA_IMAGES) ) && \
+ 	mv $@-t $@
+-endif
+ 
+ EXTRA_DIST += $(JAR_FILES) $(java_JAVA_SRC) $(java_JAVA_IMAGES)
+ 
