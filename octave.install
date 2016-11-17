@@ -1,4 +1,3 @@
 #!/usr/bin/dh-exec
-usr/bin/octave /usr/bin
-usr/bin/octave-cli /usr/bin
-usr/share/applications /usr/share
+usr/bin/octave* /usr/bin
+usr/share/applications/www.octave.org-octave.desktop /usr/share/applications
