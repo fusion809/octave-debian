@@ -1,0 +1,2 @@
+# fusion809's GNU Octave Debian Packaging Files
+This repository's contents were originally forked from the contents of the [`octave_4.0.2-1ubuntu5~octave~xenial1.debian.tar.xz`](https://launchpad.net/~octave/+archive/ubuntu/stable/+files/octave_4.0.2-1ubuntu5~octave~xenial1.debian.tar.xz) and [`octave_4.0.2-1ubuntu5~octave~trusty1.debian.tar.xz`](https://launchpad.net/~octave/+archive/ubuntu/stable/+files/octave_4.0.2-1ubuntu5~octave~trusty1.debian.tar.xz) archives provided by the `octave/stable` PPA. 

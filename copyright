@@ -150,7 +150,8 @@ Copyright: Andrew D. Fernandes <adfernan@cnd.mcgill.ca>
            2006-2013 Thomas Weber <tweber@debian.org>
            2011-2015 Sébastien Villemot <sebastien@debian.org>
            2013-2014 Mike Miller <mtmiller@debian.org>
-License: GPL-3+           
+           2016-     Brenton Horne <brentonhorne77@gmail.com>
+License: GPL-3+
 
 Files: liboctave/cruft/amos/*
        liboctave/cruft/dassl/*
@@ -173,7 +174,7 @@ Files: liboctave/cruft/daspk/*
 Copyright: none
 License: public-domain
  Work performed under the auspices of the U.S. Department of Energy
- by Lawrence Livermore National Laboratory under contract number 
+ by Lawrence Livermore National Laboratory under contract number
  W-7405-Eng-48.
 
 Files: liboctave/cruft/lapack-xtra/*
@@ -185,7 +186,7 @@ License: BSD-3-clause
  met:
  .
  - Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer. 
+   notice, this list of conditions and the following disclaimer.
  .
  - Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer listed
@@ -195,18 +196,18 @@ License: BSD-3-clause
  - Neither the name of the copyright holders nor the names of its
    contributors may be used to endorse or promote products derived from
    this software without specific prior written permission.
- . 
+ .
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT  
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT 
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: liboctave/cruft/odepack/*
 Copyright: none
@@ -226,22 +227,22 @@ License: public-domain
  QUADPACK originated from a joint project of R. Piessens and E. de
  Doncker-Kapenga (Appl. Math. and Progr. Div.- K.U.Leuven, Belgium),
  C. Überhuber (Inst. Fuer Math.- Techn.U.Wien, Austria), and D. Kahaner
- (Nation. Bur. of Standards- Washington D.C., U.S.A.). 
+ (Nation. Bur. of Standards- Washington D.C., U.S.A.).
 
 Files: liboctave/cruft/ranlib/*
 Copyright: none
 License: public-domain
- We place the Randlib code that we have written in the public domain.  
+ We place the Randlib code that we have written in the public domain.
  .
                                  NO WARRANTY
- .    
+ .
      WE PROVIDE ABSOLUTELY  NO WARRANTY  OF ANY  KIND  EITHER  EXPRESSED OR
      IMPLIED,  INCLUDING BUT   NOT LIMITED TO,  THE  IMPLIED  WARRANTIES OF
      MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK
      AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS  WITH YOU.  SHOULD
      THIS PROGRAM PROVE  DEFECTIVE, YOU ASSUME  THE COST  OF  ALL NECESSARY
      SERVICING, REPAIR OR CORRECTION.
- .    
+ .
      IN NO  EVENT  SHALL THE UNIVERSITY  OF TEXAS OR  ANY  OF ITS COMPONENT
      INSTITUTIONS INCLUDING M. D.   ANDERSON HOSPITAL BE LIABLE  TO YOU FOR
      DAMAGES, INCLUDING ANY  LOST PROFITS, LOST MONIES,   OR OTHER SPECIAL,
@@ -261,7 +262,7 @@ License: Expat
  distribute, sublicense, and/or sell copies of the Software, and to
  permit persons to whom the Software is furnished to do so, subject to
  the following conditions:
- . 
+ .
  The above copyright notice and this permission notice shall be
  included in all copies or substantial portions of the Software.
  .
@@ -271,7 +272,7 @@ License: Expat
  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
- WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Files: m4/ax_blas.m4
        m4/ax_lapack.m4
@@ -552,26 +553,26 @@ License: LGPL-3+
 Files: scripts/polynomial/private/__splinefit__.m
 Copyright: 2010 Jonas Lundgren
 License: BSD-2-clause
- Redistribution and use in source and binary forms, with or without 
- modification, are permitted provided that the following conditions are 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
  met:
  .
-     * Redistributions of source code must retain the above copyright 
+     * Redistributions of source code must retain the above copyright
        notice, this list of conditions and the following disclaimer.
-     * Redistributions in binary form must reproduce the above copyright 
-       notice, this list of conditions and the following disclaimer in 
+     * Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in
        the documentation and/or other materials provided with the distribution
  .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
- AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
- IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
- ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
- LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
- CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
- SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
- INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
- CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
- ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  POSSIBILITY OF SUCH DAMAGE.
 
 License: GPL-2+
