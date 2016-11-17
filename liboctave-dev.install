@@ -5,3 +5,4 @@ usr/include  /usr
 debian/defs.make /usr/share/octave/debian/
 usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/liboctave.so /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/
 usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/liboctinterp.so /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/
+usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/liboctgui.so /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/

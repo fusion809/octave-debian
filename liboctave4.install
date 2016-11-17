@@ -3,3 +3,5 @@
 usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/liboctave.so.4* /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/
 
 usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/liboctinterp.so.4* /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/
+
+usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/liboctgui.so.2* /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/
