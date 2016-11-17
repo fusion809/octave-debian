@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~trusty4) trusty; urgency=medium
+
+  * Fixing conflicting package files (liboctave-dev and octave used same libs)
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 00:33:21 +1000
+
 octave (4.2.0-1ubuntu0~trusty3) trusty; urgency=medium
 
   * Copying source files from octave/ppa's trusty package
