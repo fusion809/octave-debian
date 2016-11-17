@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~xenial6) xenial; urgency=medium
+
+  * Rm conflicting files from octave
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Thu, 17 Nov 2016 20:29:14 +1000
+
 octave (4.2.0-1ubuntu0~xenial5) xenial; urgency=medium
 
   * liboctave3->liboctave4 in control
