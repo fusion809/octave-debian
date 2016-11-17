@@ -1,4 +1,4 @@
-octave (4.2.0-1ubuntu0~xenial4) xenial; urgency=medium
+octave (4.2.0-1ubuntu0~trusty1) trusty; urgency=medium
 
   * Fixing issues related to liboctave-dev's placement of files
 
