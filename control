@@ -6,7 +6,7 @@ XSBC-Original-Maintainer: Debian Octave Group <pkg-octave-devel@lists.alioth.deb
 Uploaders: Sébastien Villemot <sebastien@debian.org>,
   Rafael Laboissiere <rafael@laboissiere.net>
 Build-Depends: automake,
-  debhelper (>= 9.20160114~),
+  debhelper (>= 9.20131227~),
   default-jdk,
   desktop-file-utils,
   dh-autoreconf,
