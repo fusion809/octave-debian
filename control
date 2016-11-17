@@ -63,7 +63,7 @@ Vcs-Browser: https://anonscm.debian.org/gitweb/?p=pkg-octave/octave.git
 Package: octave
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, texinfo, octave-common (= ${source:Version}),
-         liboctave3 (= ${binary:Version})
+         liboctave4 (= ${binary:Version})
 Recommends: gnuplot-x11 | gnuplot-qt, libopenblas-base | libatlas3-base,
  pstoedit,
  default-jre-headless [!hppa !hurd-i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !mips !mipsel !sparc !sparc64],
@@ -199,7 +199,7 @@ Description: Shared libraries of the GNU Octave language
 Package: liboctave-dev
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
- liboctave3 (= ${binary:Version}), octave (= ${binary:Version}),
+ liboctave4 (= ${binary:Version}), octave (= ${binary:Version}),
  libreadline-dev | libreadline6-dev | libreadline5-dev, libncurses5-dev,
  libhdf5-dev (>= 1.8.8) | libhdf5-openmpi-dev (>= 1.8.8) | libhdf5-mpich-dev (>= 1.8.8),
  libgl1-mesa-dev | libgl-dev,
