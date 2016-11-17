@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~trusty3) trusty; urgency=medium
+
+  * Copying source files from octave/ppa's trusty package
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Thu, 17 Nov 2016 21:41:00 +1000
+
 octave (4.2.0-1ubuntu0~trusty2) trusty; urgency=medium
 
   * debhelper downgrading
