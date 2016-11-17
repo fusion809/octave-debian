@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~xenial8) xenial; urgency=medium
+
+  * Fixing GUI errors
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 02:00:52 +1000
+
 octave (4.2.0-1ubuntu0~xenial7) xenial; urgency=medium
 
   * Hopefully fixing missing octave/octave-cli binary from octave package
