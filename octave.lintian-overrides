@@ -2,16 +2,5 @@
 # hardening warning are false positives
 octave: hardening-no-fortify-functions *
 
-# The empty directories are created on purpose by the upstream build
-# process
-octave: package-contains-empty-directory usr/lib/*/octave/*/site/exec/*/
-octave: package-contains-empty-directory usr/lib/*/octave/*/site/oct/*/
-octave: package-contains-empty-directory usr/lib/*/octave/api-v*/site/exec/*/
-octave: package-contains-empty-directory usr/lib/*/octave/packages/
-octave: package-contains-empty-directory usr/lib/*/octave/site/exec/*/
-octave: package-contains-empty-directory usr/lib/*/octave/site/oct/api-v*/*/
-octave: package-contains-empty-directory usr/lib/*/octave/site/oct/*/
-octave: package-contains-empty-directory usr/share/octave/packages/
-
 # The call to exit() happens in a private library
 octave: shlib-calls-exit usr/lib/*/octave/*/liboctgui.so.*
