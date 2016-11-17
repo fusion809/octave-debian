@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~trusty6) trusty; urgency=medium
+
+  * Fixing build error
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 03:21:03 +1000
+
 octave (4.2.0-1ubuntu0~trusty5) trusty; urgency=medium
 
   * Adding GUI support.
