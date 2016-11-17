@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~trusty5) trusty; urgency=medium
+
+  * Adding GUI support.
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 01:52:03 +1000
+
 octave (4.2.0-1ubuntu0~trusty4) trusty; urgency=medium
 
   * Fixing conflicting package files (liboctave-dev and octave used same libs)
