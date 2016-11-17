@@ -1,3 +1,4 @@
 #!/usr/bin/dh-exec
 usr/bin/octave* /usr/bin
+usr/bin/mkoctfile* /usr/bin
 usr/share/applications/www.octave.org-octave.desktop /usr/share/applications
