@@ -1,6 +1,6 @@
-octave (4.2.0-1ubuntu0~xenial1~amd64) xenial; urgency=medium
+octave (4.2.0-1ubuntu0~xenial1~i386) xenial; urgency=medium
 
-  * Fixing build errors; using old-fashion x86_64 in octave.install
+  * Fixing build errors; using old-fashion i386 in octave.install
 
  -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 10:28:22 +1000
 
