@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~trusty10~amd64) trusty; urgency=medium
+
+  * Fixing build error by switching to amd64 only.
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 11:27:03 +1000
+
 octave (4.2.0-1ubuntu0~trusty9) trusty; urgency=medium
 
   * Fixing build error per http://askubuntu.com/questions/850568/how-do-i-represent-arch-pc-linux-gnu-in-a-debian-install-file.
