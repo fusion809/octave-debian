@@ -2,5 +2,5 @@
 usr/bin/octave-[0-9]* /usr/bin
 usr/bin/octave-cli* /usr/bin
 usr/share/applications /usr/share
-usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/exec/$(uname -m)-pc-linux-gnu/* /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/exec/$(uname -m)-pc-linux-gnu/
+usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/exec/x86_64-pc-linux-gnu/* /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/exec/x86_64-pc-linux-gnu/
 usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/oct/* /usr/lib/${DEB_HOST_MULTIARCH}/octave/${DEB_VERSION_UPSTREAM}/oct/
