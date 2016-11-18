@@ -4,7 +4,7 @@ octave (4.2.0-1ubuntu0~xenial12) xenial; urgency=medium
 
  -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 18 Nov 2016 05:46:22 +1000
 
- octave (4.2.0-1ubuntu0~xenial11) xenial; urgency=medium
+octave (4.2.0-1ubuntu0~xenial11) xenial; urgency=medium
 
   * Fixing build errors
 
