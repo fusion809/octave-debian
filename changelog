@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~xenial16) xenial; urgency=medium
+
+  * octave_config_info->__octave_config_info__ in octave.conf
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 19 Nov 2016 08:07:22 +1000
+
 octave (4.2.0-1ubuntu0~xenial15) xenial; urgency=medium
 
   * Fixing build errors; trialing ${DEB_HOST_GNU_CPU}
