@@ -1,4 +1,4 @@
-octave (4.2.0-1ubuntu0~xenial1~amd64) xenial; urgency=medium
+octave (4.2.0-1ubuntu0~xenial13~amd64) xenial; urgency=medium
 
   * Fixing build errors; using old-fashion x86_64 in octave.install
 
