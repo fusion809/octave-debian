@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~xenial15) xenial; urgency=medium
+
+  * Fixing build errors; trialing ${DEB_HOST_GNU_CPU}
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 19 Nov 2016 06:32:22 +1000
+
 octave (4.2.0-1ubuntu0~xenial12) xenial; urgency=medium
 
   * Fixing build errors; trialing ${DEB_HOST_MULTIARCH/-linux/-pc-linux/}
