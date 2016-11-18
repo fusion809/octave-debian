@@ -1,4 +1,4 @@
-octave (4.2.0-1ubuntu0~xenial1~i386) xenial; urgency=medium
+octave (4.2.0-1ubuntu0~xenial13~i386) xenial; urgency=medium
 
   * Fixing build errors; using old-fashion i386 in octave.install
 
