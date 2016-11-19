@@ -63,7 +63,7 @@ override_dh_auto_test:
 override_dh_compress:
 	dh_compress -O--parallel --exclude=.pdf
 
-# override this call, so we do not pass the --parallel option to it; 
+# override this call, so we do not pass the --parallel option to it;
 # "make -j2 install" does not work as of now
 override_dh_auto_install:
 	# Smuggle our configuration file into the installed files

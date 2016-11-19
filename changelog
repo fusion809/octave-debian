@@ -1,3 +1,9 @@
+octave (4.2.0-1ubuntu0~precise1) precise; urgency=medium
+
+  * Copying control and rules files from precise @ octave/stable
+
+ -- Brenton Horne <brentonhorne77@gmail.com>  Fri, 20 Nov 2016 08:42:28 +1000
+
 octave (4.2.0-1ubuntu0~trusty13) trusty; urgency=medium
 
   * octave_config_info->__octave_config_info__ in octave.conf
